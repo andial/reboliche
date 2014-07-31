@@ -16,4 +16,4 @@ menciones: load %mentions.txt
 
 msg: first system/options/args
 
-foreach m menciones [ tuit: replace copy msg "$" m twitter/update tuit ]
+foreach m menciones [ tuit: replace copy msg "$" join "@" m twitter/update tuit ]
